@@ -7,10 +7,6 @@ on:
   repository_dispatch:
     types: [generar_audio]
 
-on:
-  repository_dispatch:
-    types: [generar_audio]
-
 jobs:
   generar:
     runs-on: ubuntu-latest
