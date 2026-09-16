@@ -1,0 +1,25 @@
+name: Generar Audio TTS
+
+on:
+  repository_dispatch:
+    types: [generar_audio]
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar edge-tts
+        run: pip install edge-tts
+      - name: Generar audio
+        run: python generar_audio.py "${{ github.event.client_payload.texto }}"
+      - name: Guardar resultado en el repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add output.mp3
+          git commit -m "Audio generado" || echo "Sin cambios"
+          git push
