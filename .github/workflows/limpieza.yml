@@ -1,0 +1,31 @@
+name: Limpieza de carpetas viejas
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Borrar carpetas de mas de 1 dia
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          HOY=$(date -u +%Y%m%d)
+          AYER=$(date -u -d "1 day ago" +%Y%m%d)
+          for carpeta in */; do
+            carpeta="${carpeta%/}"
+            fecha_carpeta="${carpeta:0:8}"
+            if [[ "$fecha_carpeta" =~ ^[0-9]{8}$ ]] && [[ "$fecha_carpeta" < "$AYER" ]]; then
+              echo "Borrando carpeta vieja: $carpeta"
+              git rm -r "$carpeta"
+            fi
+          done
+          git commit -m "Limpieza automatica de carpetas viejas" || echo "Nada para borrar"
+          git push
