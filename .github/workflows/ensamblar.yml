@@ -22,5 +22,5 @@ jobs:
           git config user.email "actions@github.com"
           git add "${{ github.event.client_payload.id_ejecucion }}/video_final.mp4"
           git commit -m "Video ensamblado ${{ github.event.client_payload.id_ejecucion }}" || echo "Sin cambios"
-          git pull --rebase origin main
+          git pull --rebase -X ours origin main
           git push
