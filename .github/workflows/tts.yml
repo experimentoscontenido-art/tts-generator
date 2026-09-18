@@ -18,11 +18,12 @@ jobs:
       - name: Instalar edge-tts
         run: pip install edge-tts
       - name: Generar audio
-        run: python generar_audio.py "${{ github.event.client_payload.texto }}"
+        run: python generar_audio.py "${{ github.event.client_payload.texto }}" "${{ github.event.client_payload.id_ejecucion }}" "${{ github.event.client_payload.indice }}"
       - name: Guardar resultado en el repo
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add output.mp3
-          git commit -m "Audio generado" || echo "Sin cambios"
+          git add "${{ github.event.client_payload.id_ejecucion }}/escena_${{ github.event.client_payload.indice }}.mp3"
+          git commit -m "Audio escena ${{ github.event.client_payload.indice }}" || echo "Sin cambios"
+          git pull --rebase origin main
           git push
