@@ -7,7 +7,7 @@ import random
 
 id_ejecucion = sys.argv[1]
 carpeta = id_ejecucion
-transicion = 0.5  # segundos de disolucion entre escenas
+transicion = 0.5
 
 TRANSICIONES_POSIBLES = [
     "fade", "fadeblack", "fadewhite",
@@ -48,7 +48,7 @@ for i in range(n):
     clip_out = f"{carpeta}/clip_{i}.mp4"
     subprocess.run([
         "ffmpeg", "-y", "-loop", "1", "-i", f"{carpeta}/escena_{i}.jpg",
-        "-vf", f"scale=1080:1920,zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30",
+        "-vf", f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30",
         "-t", str(dur_clip), "-pix_fmt", "yuv420p", clip_out
     ], check=True)
     clips.append(clip_out)
