@@ -1,0 +1,26 @@
+name: Ensamblar Video Final
+
+permissions:
+  contents: write
+
+on:
+  repository_dispatch:
+    types: [ensamblar_video]
+
+jobs:
+  ensamblar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Ensamblar video
+        run: python3 ensamblar_video.py "${{ github.event.client_payload.id_ejecucion }}"
+      - name: Guardar resultado en el repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add "${{ github.event.client_payload.id_ejecucion }}/video_final.mp4"
+          git commit -m "Video ensamblado ${{ github.event.client_payload.id_ejecucion }}" || echo "Sin cambios"
+          git pull --rebase origin main
+          git push
