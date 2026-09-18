@@ -17,7 +17,6 @@ def duracion_audio(ruta):
     datos = json.loads(resultado.stdout)
     return float(datos["format"]["duration"])
 
-# Detectar cuantas escenas hay, en orden
 imagenes = sorted(glob.glob(f"{carpeta}/escena_*.jpg"),
                    key=lambda x: int(x.split("_")[-1].split(".")[0]))
 n = len(imagenes)
@@ -29,12 +28,9 @@ for i in range(n):
     duraciones.append(dur)
     print(f"Escena {i}: {dur:.2f}s")
 
-# 1. Crear un clip de video individual por escena, con zoom lento (Ken Burns)
 clips = []
 for i in range(n):
     dur = duraciones[i]
-    # A las escenas que no son la ultima les sumamos el tiempo de transicion,
-    # sosteniendo el ultimo frame, para no perder contenido en la disolucion
     dur_clip = dur if i == n - 1 else dur + transicion
     frames = int(dur_clip * 30)
     zoom_expr = "min(zoom+0.0012,1.2)"
@@ -46,7 +42,6 @@ for i in range(n):
     ], check=True)
     clips.append(clip_out)
 
-# 2. Unir los clips con disolucion (xfade) entre cada par consecutivo
 if n == 1:
     subprocess.run(["cp", clips[0], f"{carpeta}/video_mudo.mp4"], check=True)
 else:
@@ -71,7 +66,6 @@ else:
     ]
     subprocess.run(cmd, check=True)
 
-# 3. Concatenar los audios de narracion, uno atras del otro
 with open(f"{carpeta}/lista_audio.txt", "w") as f:
     for i in range(n):
         f.write(f"file 'escena_{i}.mp3'\n")
@@ -82,7 +76,6 @@ subprocess.run([
     f"{carpeta}/narracion_completa.mp3"
 ], check=True)
 
-# 4. Mezclar narracion + musica de fondo (si existe musica.mp3 en la carpeta)
 musica_path = f"{carpeta}/musica.mp3"
 if os.path.exists(musica_path):
     subprocess.run([
@@ -97,12 +90,15 @@ if os.path.exists(musica_path):
 else:
     subprocess.run(["cp", f"{carpeta}/narracion_completa.mp3", f"{carpeta}/audio_final.mp3"], check=True)
 
-# 5. Unir video mudo + audio final
+# Paso 5 (actualizado): union final con codecs y flags explicitos para maxima compatibilidad
 subprocess.run([
     "ffmpeg", "-y",
     "-i", f"{carpeta}/video_mudo.mp4",
     "-i", f"{carpeta}/audio_final.mp3",
-    "-c:v", "copy", "-c:a", "aac", "-shortest",
+    "-c:v", "libx264", "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p",
+    "-c:a", "aac", "-b:a", "192k", "-ar", "44100",
+    "-movflags", "+faststart",
+    "-shortest",
     f"{carpeta}/video_final.mp4"
 ], check=True)
 
