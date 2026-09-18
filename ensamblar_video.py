@@ -3,10 +3,21 @@ import json
 import sys
 import os
 import glob
+import random
 
 id_ejecucion = sys.argv[1]
 carpeta = id_ejecucion
 transicion = 0.5  # segundos de disolucion entre escenas
+
+TRANSICIONES_POSIBLES = [
+    "fade", "fadeblack", "fadewhite",
+    "wipeleft", "wiperight", "wipeup", "wipedown",
+    "slideleft", "slideright", "slideup", "slidedown",
+    "circleopen", "circleclose",
+    "smoothleft", "smoothright"
+]
+transicion_tipo = random.choice(TRANSICIONES_POSIBLES)
+print(f"Transicion elegida para este video: {transicion_tipo}")
 
 def duracion_audio(ruta):
     resultado = subprocess.run(
@@ -54,7 +65,7 @@ else:
     salida_actual = "[0:v]"
     for i in range(1, n):
         etiqueta_salida = f"[v{i}]" if i < n - 1 else "[vout]"
-        filtro += f"{salida_actual}[{i}:v]xfade=transition=fade:duration={transicion}:offset={offset - transicion}{etiqueta_salida};"
+        filtro += f"{salida_actual}[{i}:v]xfade=transition={transicion_tipo}:duration={transicion}:offset={offset - transicion}{etiqueta_salida};"
         salida_actual = etiqueta_salida
         if i < n - 1:
             offset += duraciones[i]
@@ -90,7 +101,6 @@ if os.path.exists(musica_path):
 else:
     subprocess.run(["cp", f"{carpeta}/narracion_completa.mp3", f"{carpeta}/audio_final.mp3"], check=True)
 
-# Paso 5 (actualizado): union final con codecs y flags explicitos para maxima compatibilidad
 subprocess.run([
     "ffmpeg", "-y",
     "-i", f"{carpeta}/video_mudo.mp4",
