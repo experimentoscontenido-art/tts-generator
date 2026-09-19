@@ -94,7 +94,7 @@ if os.path.exists(musica_path):
         "-i", f"{carpeta}/narracion_completa.mp3",
         "-i", musica_path,
         "-filter_complex",
-        "[1:a]volume=0.15[musica_baja];[0:a][musica_baja]amix=inputs=2:duration=first:dropout_transition=2[audio_final]",
+        "[0:a]volume=1.2[narracion_alta];[1:a]volume=0.18[musica_alta];[narracion_alta][musica_alta]amix=inputs=2:duration=first:dropout_transition=2[audio_final]",
         "-map", "[audio_final]",
         f"{carpeta}/audio_final.mp3"
     ], check=True)
