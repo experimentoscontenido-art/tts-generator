@@ -4,6 +4,7 @@ import sys
 import os
 import glob
 import random
+import textwrap
 
 id_ejecucion = sys.argv[1]
 carpeta = id_ejecucion
@@ -19,6 +20,8 @@ TRANSICIONES_POSIBLES = [
 transicion_tipo = random.choice(TRANSICIONES_POSIBLES)
 print(f"Transicion elegida para este video: {transicion_tipo}")
 
+FUENTE = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
 def duracion_audio(ruta):
     resultado = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -27,6 +30,21 @@ def duracion_audio(ruta):
     )
     datos = json.loads(resultado.stdout)
     return float(datos["format"]["duration"])
+
+def escapar_texto_ffmpeg(texto):
+    texto = texto.replace("\\", "\\\\")
+    texto = texto.replace(":", "\\:")
+    texto = texto.replace("'", "\u2019")
+    texto = texto.replace("%", "\\%")
+    return texto
+
+def armar_texto_multilinea(texto, ancho=28):
+    lineas = textwrap.wrap(texto, width=ancho)
+    return "\n".join(lineas)
+
+# Cargar el texto de cada escena
+with open(f"{carpeta}/escenas.json", "r", encoding="utf-8") as f:
+    escenas = json.load(f)
 
 imagenes = sorted(glob.glob(f"{carpeta}/escena_*.jpg"),
                    key=lambda x: int(x.split("_")[-1].split(".")[0]))
@@ -46,9 +64,21 @@ for i in range(n):
     frames = int(dur_clip * 30)
     zoom_expr = "min(zoom+0.0012,1.2)"
     clip_out = f"{carpeta}/clip_{i}.mp4"
+
+    texto_escena = armar_texto_multilinea(escenas[i]["texto"])
+    texto_escapado = escapar_texto_ffmpeg(texto_escena)
+    texto_escapado = texto_escapado.replace("\n", "\\n")
+
+    filtro_texto = (
+        f"drawtext=fontfile={FUENTE}:text='{texto_escapado}':"
+        f"fontcolor=white:fontsize=52:borderw=3:bordercolor=black:"
+        f"box=1:boxcolor=black@0.35:boxborderw=20:"
+        f"x=(w-text_w)/2:y=h*0.72:line_spacing=10"
+    )
+
     subprocess.run([
         "ffmpeg", "-y", "-loop", "1", "-i", f"{carpeta}/escena_{i}.jpg",
-        "-vf", f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30",
+        "-vf", f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30,{filtro_texto}",
         "-t", str(dur_clip), "-pix_fmt", "yuv420p", clip_out
     ], check=True)
     clips.append(clip_out)
