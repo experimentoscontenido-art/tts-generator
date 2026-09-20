@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que algunos animales tienen más de un corazón? ¡Los pulpos tienen tres!",
+    "prompt_imagen": "Close‑up of a realistic octopus in deep blue water, focusing on its head and arms, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Dos de esos corazones bombean sangre a las branquias, donde se oxigena.",
+    "prompt_imagen": "Anatomically accurate illustration of an octopus showing two small hearts near the gills, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El tercer corazón envía sangre oxigenada al resto del cuerpo.",
+    "prompt_imagen": "Anatomically accurate illustration of an octopus highlighting a larger central heart near the mantle, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Su sangre es azul porque usa cobre (hemocianina) para transportar oxígeno, a diferencia de la hemoglobina humana.",
+    "prompt_imagen": "Close‑up of realistic octopus blood vessels with blue fluid flowing, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando el pulpo nada, el corazón central deja de latir, lo que le cansa rápidamente.",
+    "prompt_imagen": "Realistic octopus swimming vigorously, water bubbles around, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este ingenioso sistema le permite vivir en profundidades extremas donde el oxígeno es escaso.",
+    "prompt_imagen": "Octopus perched on a dark ocean floor with faint light filtering down, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió? Síguenos para más curiosidades asombrosas y cuéntanos qué otro animal te gustaría conocer.",
+    "prompt_imagen": "Friendly hand pressing a follow button on a smartphone screen, no text, no words, no logos, no icons"
+  }
+]
