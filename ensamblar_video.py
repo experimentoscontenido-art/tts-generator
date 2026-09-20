@@ -73,7 +73,6 @@ for i in range(n):
     es_ultima_escena = (i == n - 1) and all(os.path.exists(s) for s in STICKERS)
 
     if es_ultima_escena:
-        # Escena final: fondo + zoom + subtitulo + stickers animados con pulso
         inputs_extra = []
         for s in STICKERS:
             inputs_extra += ["-loop", "1", "-i", s]
@@ -91,7 +90,7 @@ for i in range(n):
             etiqueta_sticker = f"[ic{idx}]"
             etiqueta_salida = f"[b{idx}]" if idx < len(velocidades) - 1 else "[vout]"
             filtro_partes.append(
-                f"[{entrada_sticker}:v]scale=w='150+15*sin(2*PI*t*{vel})':h='150+15*sin(2*PI*t*{vel})'{etiqueta_sticker}"
+                f"[{entrada_sticker}:v]scale=w='150+15*sin(2*PI*t*{vel})':h='150+15*sin(2*PI*t*{vel})':eval=frame{etiqueta_sticker}"
             )
             filtro_partes.append(
                 f"{capa_actual}{etiqueta_sticker}overlay=x='{posiciones_x[idx]}':y=1180{etiqueta_salida}"
