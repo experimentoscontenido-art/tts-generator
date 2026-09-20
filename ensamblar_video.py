@@ -63,7 +63,7 @@ for i in range(n):
         f_sub.write(texto_multilinea)
 
     filtro_texto = (
-        f"drawtext=fontfile={FUENTE}:textfile={archivo_subtitulo}:expansion=none:"
+        f"drawtext=fontfile={FUENTE}:textfile={archivo_subtitulo}:expansion=none:text_align=C:"
         f"fontcolor=white:fontsize=48:borderw=2:bordercolor=black:"
         f"box=1:boxcolor=black@0.4:boxborderw=14:"
         f"x=(w-text_w)/2:y=h*0.70:line_spacing=12"
