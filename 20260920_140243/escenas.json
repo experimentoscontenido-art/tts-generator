@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que el pulpo tiene tres corazones y no solo uno?",
+    "prompt_imagen": "close-up of a realistic octopus with visible three heart organs inside, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Dos de esos corazones bombean sangre a las branquias para oxigenarla.",
+    "prompt_imagen": "illustration of two small octopus hearts connected to gill filaments, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El tercer corazón, llamado corazón sistémico, envía la sangre oxigenada al resto del cuerpo.",
+    "prompt_imagen": "illustration of a larger central octopus heart pumping blood through arteries, anatomically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "La sangre del pulpo es azul porque usa cobre (hemocianina) para transportar oxígeno, no hierro.",
+    "prompt_imagen": "realistic close-up of blue-colored octopus blood flowing through vessels, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando el pulpo nada, el corazón sistémico deja de latir, lo que le cansa rápidamente.",
+    "prompt_imagen": "octopus swimming with a faint heartbeat symbol fading near its central heart, realistic style, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Por eso prefieren arrastrarse por el fondo y sólo nadan en ráfagas cortas.",
+    "prompt_imagen": "octopus crawling on ocean floor, realistic marine background, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te gustó esta curiosidad, síguenos y comenta otro animal con un sistema circulatorio extraño. ¡Hay más datos asombrosos esperándote!",
+    "prompt_imagen": "happy animated octopus waving a fin, bright underwater scene, no text, no words, no logos, no icons"
+  }
+]
