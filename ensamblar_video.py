@@ -21,19 +21,11 @@ transicion_tipo = random.choice(TRANSICIONES_POSIBLES)
 print(f"Transicion elegida para este video: {transicion_tipo}")
 
 FUENTE = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-STICKERS = [
-    "assets/stickers/suscribete_youtube.png",
-    "assets/stickers/seguime_facebook.png",
-    "assets/stickers/comenta.png"
-]
 
-POSICIONES_SEGURAS = [
-    ("W*0.18-w/2", "150"),
-    ("W*0.82-w/2", "150"),
-    ("W*0.50-w/2", "150"),
-    ("W*0.18-w/2", "500"),
-    ("W*0.82-w/2", "500"),
-    ("W*0.50-w/2", "850"),
+STICKERS_FIJOS = [
+    {"archivo": "assets/stickers/seguime_facebook.png", "x": "W*0.50-w/2", "y": "150"},
+    {"archivo": "assets/stickers/suscribete_youtube.png", "x": "W*0.50-w/2", "y": "500"},
+    {"archivo": "assets/stickers/comenta.png", "x": "W*0.50-w/2", "y": "850"},
 ]
 
 def duracion_audio(ruta):
@@ -83,32 +75,31 @@ for i in range(n):
         f"x=(w-text_w)/2:y=h*0.70:line_spacing=12"
     )
 
-    es_ultima_escena = (i == n - 1) and all(os.path.exists(s) for s in STICKERS)
+    hay_stickers = all(os.path.exists(s["archivo"]) for s in STICKERS_FIJOS)
+    es_ultima_escena = (i == n - 1) and hay_stickers
 
     if es_ultima_escena:
         inputs_extra = []
-        for s in STICKERS:
-            inputs_extra += ["-loop", "1", "-i", s]
+        for s in STICKERS_FIJOS:
+            inputs_extra += ["-loop", "1", "-i", s["archivo"]]
 
-        posiciones_elegidas = random.sample(POSICIONES_SEGURAS, len(STICKERS))
-        velocidades = [round(random.uniform(1.5, 2.5), 1) for _ in STICKERS]
+        velocidades = [round(random.uniform(1.5, 2.5), 1) for _ in STICKERS_FIJOS]
 
         filtro_partes = [
             f"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
             f"zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30,{filtro_texto}[base]"
         ]
         capa_actual = "[base]"
-        for idx in range(len(STICKERS)):
+        for idx, sticker in enumerate(STICKERS_FIJOS):
             entrada_sticker = idx + 1
             etiqueta_sticker = f"[ic{idx}]"
-            etiqueta_salida = f"[b{idx}]" if idx < len(STICKERS) - 1 else "[vout]"
+            etiqueta_salida = f"[b{idx}]" if idx < len(STICKERS_FIJOS) - 1 else "[vout]"
             vel = velocidades[idx]
-            pos_x, pos_y = posiciones_elegidas[idx]
             filtro_partes.append(
-                f"[{entrada_sticker}:v]scale=w='150+15*sin(2*PI*t*{vel})':h='150+15*sin(2*PI*t*{vel})':eval=frame{etiqueta_sticker}"
+                f"[{entrada_sticker}:v]scale=w='260+20*sin(2*PI*t*{vel})':h='260+20*sin(2*PI*t*{vel})':eval=frame{etiqueta_sticker}"
             )
             filtro_partes.append(
-                f"{capa_actual}{etiqueta_sticker}overlay=x='{pos_x}':y={pos_y}{etiqueta_salida}"
+                f"{capa_actual}{etiqueta_sticker}overlay=x='{sticker['x']}':y={sticker['y']}{etiqueta_salida}"
             )
             capa_actual = etiqueta_salida
 
