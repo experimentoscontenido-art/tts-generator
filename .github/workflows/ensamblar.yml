@@ -12,6 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verificar que todos los archivos esten disponibles
+        run: |
+          CARPETA="${{ github.event.client_payload.id_ejecucion }}"
+          for i in 1 2 3 4 5; do
+            if [ -f "$CARPETA/musica.mp3" ]; then
+              echo "Musica encontrada, continuando."
+              break
+            fi
+            echo "Musica no encontrada todavia (intento $i), esperando y actualizando..."
+            sleep 5
+            git pull origin main
+          done
       - name: Instalar ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Ensamblar video
