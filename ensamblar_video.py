@@ -21,6 +21,7 @@ transicion_tipo = random.choice(TRANSICIONES_POSIBLES)
 print(f"Transicion elegida para este video: {transicion_tipo}")
 
 FUENTE = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+STICKERS = ["assets/stickers/like.png", "assets/stickers/bell.png", "assets/stickers/follow.png"]
 
 def duracion_audio(ruta):
     resultado = subprocess.run(
@@ -69,11 +70,49 @@ for i in range(n):
         f"x=(w-text_w)/2:y=h*0.70:line_spacing=12"
     )
 
-    subprocess.run([
-        "ffmpeg", "-y", "-loop", "1", "-i", f"{carpeta}/escena_{i}.jpg",
-        "-vf", f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30,{filtro_texto}",
-        "-t", str(dur_clip), "-pix_fmt", "yuv420p", clip_out
-    ], check=True)
+    es_ultima_escena = (i == n - 1) and all(os.path.exists(s) for s in STICKERS)
+
+    if es_ultima_escena:
+        # Escena final: fondo + zoom + subtitulo + stickers animados con pulso
+        inputs_extra = []
+        for s in STICKERS:
+            inputs_extra += ["-loop", "1", "-i", s]
+
+        velocidades = [2.0, 2.3, 1.7]
+        posiciones_x = ["W*0.20-w/2", "W*0.50-w/2", "W*0.80-w/2"]
+
+        filtro_partes = [
+            f"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+            f"zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30,{filtro_texto}[base]"
+        ]
+        capa_actual = "[base]"
+        for idx, vel in enumerate(velocidades):
+            entrada_sticker = idx + 1
+            etiqueta_sticker = f"[ic{idx}]"
+            etiqueta_salida = f"[b{idx}]" if idx < len(velocidades) - 1 else "[vout]"
+            filtro_partes.append(
+                f"[{entrada_sticker}:v]scale=w='150+15*sin(2*PI*t*{vel})':h='150+15*sin(2*PI*t*{vel})'{etiqueta_sticker}"
+            )
+            filtro_partes.append(
+                f"{capa_actual}{etiqueta_sticker}overlay=x='{posiciones_x[idx]}':y=1180{etiqueta_salida}"
+            )
+            capa_actual = etiqueta_salida
+
+        filtro_completo = ";".join(filtro_partes)
+
+        cmd = ["ffmpeg", "-y", "-loop", "1", "-i", f"{carpeta}/escena_{i}.jpg"] + inputs_extra + [
+            "-filter_complex", filtro_completo,
+            "-map", "[vout]",
+            "-t", str(dur_clip), "-pix_fmt", "yuv420p", clip_out
+        ]
+        subprocess.run(cmd, check=True)
+    else:
+        subprocess.run([
+            "ffmpeg", "-y", "-loop", "1", "-i", f"{carpeta}/escena_{i}.jpg",
+            "-vf", f"scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,zoompan=z='{zoom_expr}':d={frames}:s=1080x1920:fps=30,{filtro_texto}",
+            "-t", str(dur_clip), "-pix_fmt", "yuv420p", clip_out
+        ], check=True)
+
     clips.append(clip_out)
 
 if n == 1:
