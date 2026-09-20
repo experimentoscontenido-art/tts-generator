@@ -1,0 +1,26 @@
+[
+  {
+    "texto": "¿Crees que solo los mamíferos pueden reconocer caras? Las abejas también lo hacen.",
+    "prompt_imagen": "close-up of a honeybee perched on a flower, sharp focus on its compound eyes, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En 2005, científicos entrenaron abejas para distinguir entre fotos de rostros humanos diferentes.",
+    "prompt_imagen": "laboratory setting with a glass petri dish holding a small honeybee, a computer screen showing two human face photos blurred in background, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Usando una técnica de condicionamiento, las abejas aprendieron a asociar un rostro con una recompensa de azúcar.",
+    "prompt_imagen": "hand holding a drop of sugar solution near a honeybee's proboscis, close-up, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Después de varios entrenamientos, podían elegir el rostro correcto con un 80% de aciertos.",
+    "prompt_imagen": "graphical representation of a simple bar chart showing 80% success, but depicted as three honeybees standing on a line, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Lo sorprendente: utilizan patrones visuales similares a los humanos, no solo olores o colores.",
+    "prompt_imagen": "side view of a honeybee's brain with highlighted neural pathways, anatomically accurate, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así que la próxima vez que veas una abeja, recuerda: ¡está observando y aprendiendo más de lo que imaginas! Síguenos para más curiosidades como esta.",
+    "prompt_imagen": "happy honeybee flying over a meadow of wildflowers under bright sunlight, realistic proportions, high detail, no text, no words, no logos, no icons"
+  }
+]
