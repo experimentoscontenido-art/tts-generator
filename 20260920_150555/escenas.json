@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que un pulpo lleva **tres corazones** latiendo al mismo tiempo?",
+    "prompt_imagen": "close-up of a single octopus, vibrant colors, underwater background, focusing on the head, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los pulpos poseen dos corazones branquiales que bombean sangre a las branquias para oxigenarla.",
+    "prompt_imagen": "anatomically accurate illustration of an octopus internal anatomy showing two branchial hearts near the gills, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El tercer corazón, llamado corazón sistémico, distribuye la sangre oxigenada al resto del cuerpo.",
+    "prompt_imagen": "anatomically accurate illustration of an octopus internal anatomy highlighting the systemic heart near the central body cavity, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "A diferencia de los humanos, la sangre del pulpo contiene cobre (hemocianina), lo que le da un tono azul‑verdoso.",
+    "prompt_imagen": "close-up of octopus blood vessels showing blue‑green colored blood, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando el pulpo nada, el ritmo del corazón sistémico se ralentiza temporalmente, lo que hace que prefiera desplazarse arrastrándose para conservar energía.",
+    "prompt_imagen": "octopus swimming slowly near the ocean floor, water currents visible, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este complejo sistema le permite vivir en profundidades donde el oxígeno es escaso y la presión es alta.",
+    "prompt_imagen": "deep‑sea environment with dim light, a solitary octopus camouflaged on a rock, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió este dato? Síguenos para más curiosidades increíbles y cuéntanos cuál es el animal más extraño que conoces.",
+    "prompt_imagen": "friendly hand pressing a follow button on a stylized social media interface, no text, no words, no logos, no icons"
+  }
+]
