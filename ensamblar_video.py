@@ -31,15 +31,8 @@ def duracion_audio(ruta):
     datos = json.loads(resultado.stdout)
     return float(datos["format"]["duration"])
 
-def escapar_texto_ffmpeg(texto):
-    texto = texto.replace("\\", "\\\\")
-    texto = texto.replace(":", "\\:")
-    texto = texto.replace("'", "\u2019")
-    texto = texto.replace("%", "\\%")
-    return texto
-
-def armar_texto_multilinea(texto, ancho=20):
-    lineas = textwrap.wrap(texto, width=ancho)
+def armar_texto_multilinea(texto, ancho=16):
+    lineas = textwrap.wrap(texto, width=ancho, break_long_words=True)
     return "\n".join(lineas)
 
 with open(f"{carpeta}/escenas.json", "r", encoding="utf-8") as f:
@@ -64,15 +57,17 @@ for i in range(n):
     zoom_expr = "min(zoom+0.0012,1.2)"
     clip_out = f"{carpeta}/clip_{i}.mp4"
 
-    texto_escena = armar_texto_multilinea(escenas[i]["texto"])
-    texto_escapado = escapar_texto_ffmpeg(texto_escena)
-    texto_escapado = texto_escapado.replace("\n", "\\n")
+    # Escribir el subtitulo de esta escena en un archivo de texto aparte
+    texto_multilinea = armar_texto_multilinea(escenas[i]["texto"])
+    archivo_subtitulo = f"{carpeta}/sub_{i}.txt"
+    with open(archivo_subtitulo, "w", encoding="utf-8") as f_sub:
+        f_sub.write(texto_multilinea)
 
     filtro_texto = (
-        f"drawtext=fontfile={FUENTE}:text='{texto_escapado}':"
-        f"fontcolor=white:fontsize=42:borderw=2:bordercolor=black:"
+        f"drawtext=fontfile={FUENTE}:textfile={archivo_subtitulo}:"
+        f"fontcolor=white:fontsize=40:borderw=2:bordercolor=black:"
         f"box=1:boxcolor=black@0.4:boxborderw=14:"
-        f"x=(w-text_w)/2:y=h*0.70:line_spacing=14"
+        f"x=(w-text_w)/2:y=h*0.70:line_spacing=12"
     )
 
     subprocess.run([
