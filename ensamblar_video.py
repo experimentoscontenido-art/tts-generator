@@ -38,11 +38,10 @@ def escapar_texto_ffmpeg(texto):
     texto = texto.replace("%", "\\%")
     return texto
 
-def armar_texto_multilinea(texto, ancho=28):
+def armar_texto_multilinea(texto, ancho=20):
     lineas = textwrap.wrap(texto, width=ancho)
     return "\n".join(lineas)
 
-# Cargar el texto de cada escena
 with open(f"{carpeta}/escenas.json", "r", encoding="utf-8") as f:
     escenas = json.load(f)
 
@@ -71,9 +70,9 @@ for i in range(n):
 
     filtro_texto = (
         f"drawtext=fontfile={FUENTE}:text='{texto_escapado}':"
-        f"fontcolor=white:fontsize=52:borderw=3:bordercolor=black:"
-        f"box=1:boxcolor=black@0.35:boxborderw=20:"
-        f"x=(w-text_w)/2:y=h*0.72:line_spacing=10"
+        f"fontcolor=white:fontsize=42:borderw=2:bordercolor=black:"
+        f"box=1:boxcolor=black@0.4:boxborderw=14:"
+        f"x=(w-text_w)/2:y=h*0.70:line_spacing=14"
     )
 
     subprocess.run([
