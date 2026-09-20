@@ -31,8 +31,8 @@ def duracion_audio(ruta):
     datos = json.loads(resultado.stdout)
     return float(datos["format"]["duration"])
 
-def armar_texto_multilinea(texto, ancho=16):
-    lineas = textwrap.wrap(texto, width=ancho, break_long_words=True)
+def armar_texto_multilinea(texto, ancho=24, break_long_words=True):
+    lineas = textwrap.wrap(texto, width=ancho, break_long_words=break_long_words)
     return "\n".join(lineas)
 
 with open(f"{carpeta}/escenas.json", "r", encoding="utf-8") as f:
@@ -57,15 +57,14 @@ for i in range(n):
     zoom_expr = "min(zoom+0.0012,1.2)"
     clip_out = f"{carpeta}/clip_{i}.mp4"
 
-    # Escribir el subtitulo de esta escena en un archivo de texto aparte
     texto_multilinea = armar_texto_multilinea(escenas[i]["texto"])
     archivo_subtitulo = f"{carpeta}/sub_{i}.txt"
     with open(archivo_subtitulo, "w", encoding="utf-8") as f_sub:
         f_sub.write(texto_multilinea)
 
     filtro_texto = (
-        f"drawtext=fontfile={FUENTE}:textfile={archivo_subtitulo}:"
-        f"fontcolor=white:fontsize=40:borderw=2:bordercolor=black:"
+        f"drawtext=fontfile={FUENTE}:textfile={archivo_subtitulo}:expansion=none:"
+        f"fontcolor=white:fontsize=48:borderw=2:bordercolor=black:"
         f"box=1:boxcolor=black@0.4:boxborderw=14:"
         f"x=(w-text_w)/2:y=h*0.70:line_spacing=12"
     )
