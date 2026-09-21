@@ -28,6 +28,12 @@ STICKERS_FIJOS = [
     {"archivo": "assets/stickers/comenta.png", "x": "W*0.50-w/2", "y": "850"},
 ]
 
+EFECTOS_TRANSICION = [
+    "assets/efectos/efecto1.mp3",
+    "assets/efectos/efecto2.mp3",
+    "assets/efectos/efecto3.mp3",
+]
+
 def duracion_audio(ruta):
     resultado = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -56,6 +62,8 @@ for i in range(n):
     print(f"Escena {i}: {dur:.2f}s")
 
 clips = []
+puntos_transicion = []
+
 for i in range(n):
     dur = duraciones[i]
     dur_clip = dur if i == n - 1 else dur + transicion
@@ -132,7 +140,9 @@ else:
     salida_actual = "[0:v]"
     for i in range(1, n):
         etiqueta_salida = f"[v{i}]" if i < n - 1 else "[vout]"
-        filtro += f"{salida_actual}[{i}:v]xfade=transition={transicion_tipo}:duration={transicion}:offset={offset - transicion}{etiqueta_salida};"
+        punto = offset - transicion
+        puntos_transicion.append(punto)
+        filtro += f"{salida_actual}[{i}:v]xfade=transition={transicion_tipo}:duration={transicion}:offset={punto}{etiqueta_salida};"
         salida_actual = etiqueta_salida
         if i < n - 1:
             offset += duraciones[i]
@@ -168,10 +178,40 @@ if os.path.exists(musica_path):
 else:
     subprocess.run(["cp", f"{carpeta}/narracion_completa.mp3", f"{carpeta}/audio_final.mp3"], check=True)
 
+# Insertar efectos de sonido en cada punto de transicion
+efecto_elegido = random.choice(EFECTOS_TRANSICION) if os.path.exists(EFECTOS_TRANSICION[0]) else None
+
+if efecto_elegido and puntos_transicion:
+    inputs_efectos = []
+    for _ in puntos_transicion:
+        inputs_efectos += ["-i", efecto_elegido]
+
+    filtro_efectos = "[0:a]anull[base];"
+    entradas_mezcla = ["[base]"]
+    for idx, punto in enumerate(puntos_transicion):
+        entrada_num = idx + 1
+        delay_ms = int(punto * 1000)
+        etiqueta = f"[ef{idx}]"
+        filtro_efectos += f"[{entrada_num}:a]adelay={delay_ms}|{delay_ms},volume=0.7{etiqueta};"
+        entradas_mezcla.append(etiqueta)
+
+    total_entradas = len(entradas_mezcla)
+    filtro_efectos += "".join(entradas_mezcla) + f"amix=inputs={total_entradas}:duration=first:dropout_transition=0[audio_con_efectos]"
+
+    cmd_efectos = ["ffmpeg", "-y", "-i", f"{carpeta}/audio_final.mp3"] + inputs_efectos + [
+        "-filter_complex", filtro_efectos,
+        "-map", "[audio_con_efectos]",
+        f"{carpeta}/audio_con_efectos.mp3"
+    ]
+    subprocess.run(cmd_efectos, check=True)
+    audio_para_video = f"{carpeta}/audio_con_efectos.mp3"
+else:
+    audio_para_video = f"{carpeta}/audio_final.mp3"
+
 subprocess.run([
     "ffmpeg", "-y",
     "-i", f"{carpeta}/video_mudo.mp4",
-    "-i", f"{carpeta}/audio_final.mp3",
+    "-i", audio_para_video,
     "-c:v", "libx264", "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p",
     "-c:a", "aac", "-b:a", "192k", "-ar", "44100",
     "-movflags", "+faststart",
