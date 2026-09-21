@@ -6,7 +6,7 @@ import os
 texto = sys.argv[1]
 id_ejecucion = sys.argv[2]
 indice = sys.argv[3]
-voz = "es-AR-ElenaNeural"
+voz = "es-CR-JuanNeural"
 
 carpeta = id_ejecucion
 archivo_salida = f"{carpeta}/escena_{indice}.mp3"
