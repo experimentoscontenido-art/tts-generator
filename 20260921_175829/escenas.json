@@ -1,0 +1,26 @@
+[
+  {
+    "texto": "¿Sabías que una abeja puede reconocer tu rostro mejor que un robot?",
+    "prompt_imagen": "close-up of a honeybee perched on a flower, realistic detail, high detail, anatomically accurate, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En 2015, científicos entrenaron a abejas usando fotografías de caras humanas.",
+    "prompt_imagen": "laboratory setup with a honeybee inside a small transparent cage, a computer screen showing a human face, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Al presentar la imagen, la abeja aprendía a asociar la cara con una recompensa de azúcar.",
+    "prompt_imagen": "hand holding a drop of sugar solution near a honeybee, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Después de varios entrenamientos, la abeja distinguía entre caras familiares y desconocidas.",
+    "prompt_imagen": "two separate panels: one with a honeybee hovering near a familiar face photo, another near an unfamiliar face photo, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este hallazgo muestra que la visión y la memoria de las abejas son mucho más complejas de lo que pensábamos.",
+    "prompt_imagen": "microscopic view of bee brain neurons lighting up, high detail, anatomically accurate, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¡Impresionante, ¿no? Síguenos para más curiosidades sorprendentes y cuéntanos en los comentarios: ¿qué otro animal crees que puede reconocer caras?",
+    "prompt_imagen": "bright, colorful background with a stylized question mark and a bee silhouette, no text, no words, no logos, no icons"
+  }
+]
