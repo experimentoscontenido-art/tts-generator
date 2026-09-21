@@ -171,14 +171,14 @@ if os.path.exists(musica_path):
         "-i", f"{carpeta}/narracion_completa.mp3",
         "-i", musica_path,
         "-filter_complex",
-        "[0:a]volume=1.2[narracion_alta];[1:a]volume=0.18[musica_alta];[narracion_alta][musica_alta]amix=inputs=2:duration=first:dropout_transition=2[audio_final]",
+        "[0:a]volume=1.56[narracion_alta];[1:a]volume=0.234[musica_alta];"
+        "[narracion_alta][musica_alta]amix=inputs=2:duration=first:dropout_transition=2:normalize=0[audio_final]",
         "-map", "[audio_final]",
         f"{carpeta}/audio_final.mp3"
     ], check=True)
 else:
     subprocess.run(["cp", f"{carpeta}/narracion_completa.mp3", f"{carpeta}/audio_final.mp3"], check=True)
 
-# Insertar efectos de sonido en cada punto de transicion
 efecto_elegido = random.choice(EFECTOS_TRANSICION) if os.path.exists(EFECTOS_TRANSICION[0]) else None
 
 if efecto_elegido and puntos_transicion:
@@ -192,11 +192,14 @@ if efecto_elegido and puntos_transicion:
         entrada_num = idx + 1
         delay_ms = int(punto * 1000)
         etiqueta = f"[ef{idx}]"
-        filtro_efectos += f"[{entrada_num}:a]adelay={delay_ms}|{delay_ms},volume=0.7{etiqueta};"
+        filtro_efectos += f"[{entrada_num}:a]adelay={delay_ms}|{delay_ms},volume=0.6{etiqueta};"
         entradas_mezcla.append(etiqueta)
 
     total_entradas = len(entradas_mezcla)
-    filtro_efectos += "".join(entradas_mezcla) + f"amix=inputs={total_entradas}:duration=first:dropout_transition=0[audio_con_efectos]"
+    filtro_efectos += "".join(entradas_mezcla) + (
+        f"amix=inputs={total_entradas}:duration=first:dropout_transition=0:normalize=0[mezcla_efectos];"
+        f"[mezcla_efectos]alimiter=limit=0.95[audio_con_efectos]"
+    )
 
     cmd_efectos = ["ffmpeg", "-y", "-i", f"{carpeta}/audio_final.mp3"] + inputs_efectos + [
         "-filter_complex", filtro_efectos,
