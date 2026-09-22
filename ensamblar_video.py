@@ -211,12 +211,19 @@ if efecto_elegido and puntos_transicion:
 else:
     audio_para_video = f"{carpeta}/audio_final.wav"
 
+# --- Bloque final corregido: cumple especificaciones exactas de Facebook Reels ---
+# -r 30: framerate fijo (constante), sin variaciones
+# -g 90 -keyint_min 90 -sc_threshold 0: keyframe cada 90 frames (3s a 30fps) de forma
+#   fija, dentro del rango 2-5s que pide Facebook, sin detección automática de escena
+# -ar 48000 -ac 2: audio a 48kHz estéreo, como pide Facebook (antes estaba en 44100)
 subprocess.run([
     "ffmpeg", "-y",
     "-i", f"{carpeta}/video_mudo.mp4",
     "-i", audio_para_video,
     "-c:v", "libx264", "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p",
-    "-c:a", "aac", "-b:a", "192k", "-ar", "44100",
+    "-r", "30",
+    "-g", "90", "-keyint_min", "90", "-sc_threshold", "0",
+    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
     "-movflags", "+faststart",
     "-shortest",
     f"{carpeta}/video_final.mp4"
