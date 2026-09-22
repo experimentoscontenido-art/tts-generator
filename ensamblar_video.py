@@ -160,24 +160,24 @@ with open(f"{carpeta}/lista_audio.txt", "w") as f:
 
 subprocess.run([
     "ffmpeg", "-y", "-f", "concat", "-safe", "0",
-    "-i", f"{carpeta}/lista_audio.txt", "-c", "copy",
-    f"{carpeta}/narracion_completa.mp3"
+    "-i", f"{carpeta}/lista_audio.txt",
+    f"{carpeta}/narracion_completa.wav"
 ], check=True)
 
 musica_path = f"{carpeta}/musica.mp3"
 if os.path.exists(musica_path):
     subprocess.run([
         "ffmpeg", "-y",
-        "-i", f"{carpeta}/narracion_completa.mp3",
+        "-i", f"{carpeta}/narracion_completa.wav",
         "-i", musica_path,
         "-filter_complex",
         "[0:a]volume=1.56[narracion_alta];[1:a]volume=0.234[musica_alta];"
         "[narracion_alta][musica_alta]amix=inputs=2:duration=first:dropout_transition=2:normalize=0[audio_final]",
         "-map", "[audio_final]",
-        f"{carpeta}/audio_final.mp3"
+        f"{carpeta}/audio_final.wav"
     ], check=True)
 else:
-    subprocess.run(["cp", f"{carpeta}/narracion_completa.mp3", f"{carpeta}/audio_final.mp3"], check=True)
+    subprocess.run(["cp", f"{carpeta}/narracion_completa.wav", f"{carpeta}/audio_final.wav"], check=True)
 
 efecto_elegido = random.choice(EFECTOS_TRANSICION) if os.path.exists(EFECTOS_TRANSICION[0]) else None
 
@@ -201,15 +201,15 @@ if efecto_elegido and puntos_transicion:
         f"[mezcla_efectos]alimiter=limit=0.95[audio_con_efectos]"
     )
 
-    cmd_efectos = ["ffmpeg", "-y", "-i", f"{carpeta}/audio_final.mp3"] + inputs_efectos + [
+    cmd_efectos = ["ffmpeg", "-y", "-i", f"{carpeta}/audio_final.wav"] + inputs_efectos + [
         "-filter_complex", filtro_efectos,
         "-map", "[audio_con_efectos]",
-        f"{carpeta}/audio_con_efectos.mp3"
+        f"{carpeta}/audio_con_efectos.wav"
     ]
     subprocess.run(cmd_efectos, check=True)
-    audio_para_video = f"{carpeta}/audio_con_efectos.mp3"
+    audio_para_video = f"{carpeta}/audio_con_efectos.wav"
 else:
-    audio_para_video = f"{carpeta}/audio_final.mp3"
+    audio_para_video = f"{carpeta}/audio_final.wav"
 
 subprocess.run([
     "ffmpeg", "-y",
