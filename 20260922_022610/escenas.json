@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que hay un animal marino con tres corazones latiendo al mismo tiempo?",
+    "prompt_imagen": "close‑up of a realistic octopus head with visible skin texture, underwater background, soft lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los pulpos son moluscos cefalópodos y su cuerpo está lleno de sangre azul por la hemocianina.",
+    "prompt_imagen": "realistic octopus swimming in deep blue water, showing its blue‑colored blood vessels, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Tienen dos corazones branquiales que bombean sangre a las branquias para oxigenarla.",
+    "prompt_imagen": "illustration of two small pumping hearts near octopus gills, anatomically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El tercer corazón, llamado corazón sistémico, impulsa la sangre oxigenada al resto del cuerpo.",
+    "prompt_imagen": "illustration of a larger central heart inside octopus body, showing blood flow to limbs, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando el pulpo nada, el corazón sistémico se detiene temporalmente, por eso prefieren arrastrarse para ahorrar energía.",
+    "prompt_imagen": "octopus crawling along ocean floor, gentle movement, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así, sus tres corazones le permiten sobrevivir en ambientes con bajo oxígeno y ser maestros del camuflaje.",
+    "prompt_imagen": "octopus changing color to match coral, vivid colors, realistic detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió? Síguenos en CienciaMente para más curiosidades como esta y cuéntanos en los comentarios otro animal con un sistema único.",
+    "prompt_imagen": "friendly hand pressing a 'follow' button icon on a smartphone screen, stylized but no actual icons or text, no text, no words, no logos, no icons"
+  }
+]
