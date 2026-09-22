@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que una abeja puede identificar tu rostro entre miles de personas?",
+    "prompt_imagen": "close-up of a honeybee perched on a flower, looking directly at the camera, realistic detail, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Un estudio de la Universidad de Londres entrenó abejas para reconocer imágenes de rostros humanos.",
+    "prompt_imagen": "laboratory setting with a honeybee on a small platform beside a computer screen displaying human faces, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los investigadores mostraron a las abejas 30 fotos diferentes, y ellas aprendieron a distinguir entre ellas.",
+    "prompt_imagen": "grid of 30 portrait photos on a table, honeybee hovering above one of them, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando la abeja vio un rostro que había aprendido, extendió su probóscide para obtener néctar como recompensa.",
+    "prompt_imagen": "honeybee extending its proboscis toward a small droplet of nectar on a flower, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si la foto no coincidía, la abeja simplemente se alejó sin intentar alimentarse.",
+    "prompt_imagen": "honeybee flying away from a flower, background showing a blurred face image, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este experimento muestra que la visión de las abejas no es solo colores, sino que procesa patrones complejos como los rasgos faciales.",
+    "prompt_imagen": "close-up of a honeybee eye, showing detailed facets, scientific illustration style, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te imaginas lo que podrían aprender más criaturas? Síguenos en CienciaMente y cuéntanos qué otro animal te gustaría investigar.",
+    "prompt_imagen": "bright animated background with a question mark and a stylized honeybee silhouette, no text, no words, no logos, no icons"
+  }
+]
