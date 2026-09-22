@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que en el océano hay una zona donde nunca llega la luz del sol?",
+    "prompt_imagen": "deep dark ocean water with a faint gradient to black, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta región se llama zona afótica y comienza a unos 1000 metros de profundidad.",
+    "prompt_imagen": "cross‑section of ocean layers showing sunlight penetration ending at 1000 m, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En la completa oscuridad, la vida depende de la bioluminiscencia para cazar y comunicarse.",
+    "prompt_imagen": "glowing jellyfish emitting blue light in black water, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El pez linterna tiene un órgano luminoso bajo su cabeza que funciona como faro.",
+    "prompt_imagen": "deep‑sea lanternfish with a bright organ under its head, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los camarones mantis generan destellos de luz mediante la reflexión de luz en sus estructuras, lo que puede desorientar a sus presas en un instante.",
+    "prompt_imagen": "mantis shrimp striking prey with a flash of reflected light, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Incluso los calamares gigantes usan luces para atraer parejas y confundir depredadores.",
+    "prompt_imagen": "giant squid displaying patterned bioluminescent spots, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "La zona afótica es un laboratorio natural de adaptación extrema. ¿Quieres descubrir más misterios del fondo marino? Síguenos y comenta cuál criatura te sorprendió más.",
+    "prompt_imagen": "silhouette of a deep‑sea trench fading into darkness, no text, no words, no logos, no icons"
+  }
+]
