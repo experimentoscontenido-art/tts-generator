@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que, aunque el cerebro no produce sonidos audibles, su actividad eléctrica durante el sueño puede ser convertida en música?",
+    "prompt_imagen": "close-up of a sleeping human head with a faint glow representing brain activity, dark bedroom background, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los electroencefalogramas (EEG) capturan las ondas eléctricas que el cerebro emite en cada fase del sueño.",
+    "prompt_imagen": "EEG device with electrodes on a scalp, showing colorful wave patterns on a monitor, laboratory setting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los científicos convierten esas ondas en tonos musicales usando algoritmos de sonificación.",
+    "prompt_imagen": "computer screen displaying waveforms turning into musical notes, scientist typing, modern lab, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Durante el sueño REM, la actividad cerebral se traduce en frecuencias bajas que suenan como un susurro profundo.",
+    "prompt_imagen": "visual representation of low-frequency sound waves flowing from a brain, dark blue tones, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En contraste, en sueño ligero aparecen tonos más agudos, parecidos a un canto de pájaro.",
+    "prompt_imagen": "high-pitched sound waves emanating from a brain, bright yellow highlights, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Al reproducir estos sonidos, escuchamos la “música” única de cada noche.",
+    "prompt_imagen": "headphones placed on a pillow, sound waves visualized as musical staff flowing out, cozy bedroom, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te imaginas cuál sería la banda sonora de tu mente? Síguenos en CienciaMente para más datos asombrosos y cuéntanos en los comentarios el sonido que escuchas.",
+    "prompt_imagen": "person waking up with a smile, sunrise through window, soft light, no text, no words, no logos, no icons"
+  }
+]
