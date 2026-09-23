@@ -1,0 +1,26 @@
+[
+  {
+    "texto": "¿Qué color tiene la sangre de un pulpo? No es roja, ¡es azul! ¿Por qué?",
+    "prompt_imagen": "close-up of a vibrant blue oceanic octopus with its tentacles extended, high detail, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los pulpos usan cobre en lugar de hierro para transportar oxígeno en su sangre.",
+    "prompt_imagen": "illustration of a copper atom (Cu) highlighted inside a bloodstream, realistic scientific illustration, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta molécula se llama hemocianina y se vuelve azul cuando se une al oxígeno.",
+    "prompt_imagen": "molecular structure of hemocyanin showing copper centers, blue tint, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "La hemocianina funciona mejor en aguas frías y con bajo contenido de oxígeno, típicas de las profundidades.",
+    "prompt_imagen": "deep sea environment with cold dark water and a solitary octopus, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así, la sangre azul permite que el pulpo respire eficientemente donde otros animales fallarían.",
+    "prompt_imagen": "octopus swimming gracefully near a hydrothermal vent, showcasing its adaptability, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió? Síguenos en CienciaMente para descubrir más misterios del mundo natural.",
+    "prompt_imagen": "hand pressing the follow button on a smartphone screen showing the CienciaMente profile, realistic, no text, no words, no logos, no icons"
+  }
+]
