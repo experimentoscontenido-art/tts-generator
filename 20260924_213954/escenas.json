@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que los tiburones pueden sentir la electricidad a varios metros de distancia?",
+    "prompt_imagen": "close-up of a great white shark's head with its dorsal fin emerging from water, high detail, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta habilidad se llama electrorrecepción y proviene de unas células especiales llamadas ampollas de Lorenzini.",
+    "prompt_imagen": "illustration of ampollas de Lorenzini on a shark's snout, microscopic view, high detail, anatomically accurate, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Detectan los campos eléctricos generados por los músculos y los latidos del corazón de sus presas.",
+    "prompt_imagen": "transparent overlay showing electric field lines around a small fish swimming, realistic ocean background, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así, un tiburón puede localizar una anguila escondida bajo la arena sin verla.",
+    "prompt_imagen": "shark swimming close to sandy seabed, faint silhouette of an eel beneath sand, high detail, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta capacidad también le ayuda a orientarse durante la migración en aguas profundas.",
+    "prompt_imagen": "vast deep ocean scene with a lone shark moving through dark water, subtle glow indicating electric sensing, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los científicos usan esta característica para diseñar sensores inspirados en los tiburones.",
+    "prompt_imagen": "laboratory bench with a bio-inspired electric sensor prototype, high detail, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¡Increíble, ¿no?! Síguenos en CienciaMente para más datos sorprendentes y cuéntanos qué animal te fascina más.",
+    "prompt_imagen": "friendly animated hand pressing a follow button on a bright background, no text, no words, no logos, no icons"
+  }
+]
