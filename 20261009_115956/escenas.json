@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que algunos volcanes pueden lanzar relámpagos al erupcionar?",
+    "prompt_imagen": "volcán en erupción con una explosión de ceniza, fondo oscuro, atmósfera dramática, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando el magma caliente choca con la atmósfera, se generan enormes cantidades de partículas cargadas.",
+    "prompt_imagen": "partículas de ceniza y vapor ascendente sobre un volcán, alta resolución, realista, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Estas partículas se separan y crean una diferencia de carga eléctrica, similar a una nube de tormenta.",
+    "prompt_imagen": "capa de partículas cargadas flotando sobre la cima del volcán, iluminación tenue, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando la diferencia de potencial es suficientemente alta, se produce una descarga eléctrica: el relámpago volcánico.",
+    "prompt_imagen": "relámpago brillante emergiendo de la columna de ceniza de un volcán, detalle alto, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "A diferencia de los relámpagos comunes, estos pueden durar varios segundos y ramificarse en múltiples trazos.",
+    "prompt_imagen": "serie de relámpagos ramificados sobre la erupción volcánica, colores intensos, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este fenómeno ocurre en volcanes activos como el volcán Sakurajima en Japón y el volcán Kīlauea en Hawai.",
+    "prompt_imagen": "volcán Sakurajima con erupción nocturna, visible relámpagos, estilo fotográfico, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¡Impresionante, ¿verdad? Síguenos en CienciaMente para descubrir más misterios de la naturaleza y cuéntanos si has visto un relámpago volcánico!",
+    "prompt_imagen": "persona mirando el cielo nocturno con asombro, silueta contra un fondo estrellado, no text, no words, no logos, no icons"
+  }
+]
