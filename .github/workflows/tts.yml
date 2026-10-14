@@ -18,12 +18,30 @@ jobs:
       - name: Instalar edge-tts
         run: pip install edge-tts
       - name: Generar audio
-        run: python generar_audio.py "${{ github.event.client_payload.texto }}" "${{ github.event.client_payload.id_ejecucion }}" "${{ github.event.client_payload.indice }}"
+        env:
+          TEXTO: ${{ github.event.client_payload.texto }}
+          ID_EJECUCION: ${{ github.event.client_payload.id_ejecucion }}
+          INDICE: ${{ github.event.client_payload.indice }}
+        run: python generar_audio.py "$TEXTO" "$ID_EJECUCION" "$INDICE"
       - name: Guardar resultado en el repo
+        env:
+          ID_EJECUCION: ${{ github.event.client_payload.id_ejecucion }}
+          INDICE: ${{ github.event.client_payload.indice }}
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add "${{ github.event.client_payload.id_ejecucion }}/escena_${{ github.event.client_payload.indice }}.mp3"
-          git commit -m "Audio escena ${{ github.event.client_payload.indice }}" || echo "Sin cambios"
-          git pull --rebase origin main
-          git push
+          git add "$ID_EJECUCION/escena_$INDICE.mp3"
+          git commit -m "Audio escena $INDICE" || echo "Sin cambios"
+          OK=0
+          for i in 1 2 3 4 5 6; do
+            if git pull --rebase origin main && git push; then
+              OK=1
+              break
+            fi
+            echo "Push rechazado, reintento $i..."
+            sleep $((i * 4))
+          done
+          if [ "$OK" -ne 1 ]; then
+            echo "No se pudo subir el audio al repositorio"
+            exit 1
+          fi
