@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que el helio, un gas noble, está presente en pequeñas cantidades en la atmósfera terrestre, principalmente en la troposfera y estratosfera, aunque su concentración es muy baja?",
+    "prompt_imagen": "close-up of a clear blue sky gradually fading into space, showing a subtle representation of atmospheric layers, realistic atmosphere, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El helio, el segundo gas más ligero después del hidrógeno, se genera a partir de la desintegración radiactiva del suelo y escapa lentamente al espacio, pero la mayor parte permanece en la atmósfera inferior.",
+    "prompt_imagen": "animated illustration of helium atoms being produced near the ground and slowly rising, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En la atmósfera, el helio está distribuido de forma homogénea y no forma una capa delgada ni significativa; su concentración disminuye con la altura, llegando a valores muy bajos en la termosfera.",
+    "prompt_imagen": "cross‑section view of Earth's atmosphere showing gradual decrease of helium concentration with altitude, realistic layers, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Debido a su baja densidad, el helio tiene un efecto prácticamente nulo en la velocidad de propagación de las ondas de radio, por lo que no genera distorsiones apreciables en las comunicaciones satelitales.",
+    "prompt_imagen": "satellite dish transmitting signals through clear air, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los científicos estudian la composición de la atmósfera mediante radiosondas y otros instrumentos, pero la medición de helio a gran altura no es un objetivo principal porque su presencia es escasa.",
+    "prompt_imagen": "scientist holding a radiosonde balloon against a clear sky, equipment detailed, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Aunque el helio es importante en aplicaciones como los globos y la criogenia, su influencia en la calibración de sistemas de navegación y comunicaciones es mínima.",
+    "prompt_imagen": "global map with satellite arcs, subtle indication of standard atmospheric composition, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió la verdadera presencia del helio en la atmósfera? Síguenos, comenta si conocías estos datos y descubre más curiosidades científicas.",
+    "prompt_imagen": "person looking up at the sky with a thoughtful expression, night stars visible, realistic, high detail, no text, no words, no logos, no icons"
+  }
+]
