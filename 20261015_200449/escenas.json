@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que existe un robot que puede arreglar su propio cerebro digital sin que nadie lo toque?",
+    "prompt_imagen": "close-up of a sleek humanoid robot head with transparent skull revealing circuit boards and glowing processors, realistic proportions, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este robot, llamado 'SelfRepairBot', está equipado con sensores que monitorean constantemente la temperatura y la señal eléctrica de su CPU.",
+    "prompt_imagen": "robotic sensor array attached to a processor board, showing tiny LED indicators, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando detecta una anomalía, activa micro‑actuadores que pueden soldar o reconfigurar los componentes dañados.",
+    "prompt_imagen": "microscopic view of a robotic micro‑actuator soldering a tiny chip on a circuit board, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El proceso utiliza una combinación de inteligencia artificial y algoritmos de diagnóstico que aprenden de cada reparación.",
+    "prompt_imagen": "digital interface showing AI algorithm flowchart overlaying a robot brain diagram, realistic proportions, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así, el robot no solo evita fallas inesperadas, sino que también prolonga su vida útil sin intervención humana.",
+    "prompt_imagen": "robot standing upright with a glowing aura around its chest, symbolizing self‑healing, realistic proportions, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta tecnología podría aplicarse pronto a drones, satélites y vehículos autónomos que operan en entornos remotos.",
+    "prompt_imagen": "drone flying over a rugged mountain landscape, with faint circuitry overlay, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te imaginas un futuro donde las máquinas se mantengan solas? Síguenos en CienciaMente para más curiosidades como esta y cuéntanos cuál robot te gustaría que tuviera auto‑reparación.",
+    "prompt_imagen": "hand pressing a 'follow' button on a futuristic holographic interface, no text, no words, no logos, no icons"
+  }
+]
