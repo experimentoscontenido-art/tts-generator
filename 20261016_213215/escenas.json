@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que el tic‑toc de tu reloj y el latido de tu smartphone vienen del mismo cristal?",
+    "prompt_imagen": "close‑up of a tiny transparent quartz crystal on a circuit board, high detail, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Ese diminuto cristal es cuarzo piezoeléctrico: vibra al aplicarle electricidad.",
+    "prompt_imagen": "microscopic view of a quartz crystal vibrating, bright highlights, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando se le envía una corriente, genera una frecuencia constante de 32 kHz.",
+    "prompt_imagen": "digital waveform illustration showing a 32 kHz sine wave, high detail, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta frecuencia es la base del reloj interno de casi todos los dispositivos electrónicos.",
+    "prompt_imagen": "interior of a smartwatch motherboard highlighting the quartz crystal module, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El microcontrolador cuenta los ciclos de vibración y los traduce en segundos, minutos y horas.",
+    "prompt_imagen": "schematic diagram of a microcontroller counting quartz crystal cycles, high detail, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Por eso, aunque cambies la batería, tu reloj y teléfono siguen sincronizados.",
+    "prompt_imagen": "hand swapping a watch battery while a smartphone displays the same time, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¡Y eso es solo una pequeña pieza que mantiene tu día en orden! Síguenos para más datos curiosos.",
+    "prompt_imagen": "person smiling while looking at a wristwatch and phone, bright background, realistic proportions, no text, no words, no logos, no icons"
+  }
+]
