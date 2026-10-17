@@ -1,0 +1,26 @@
+[
+  {
+    "texto": "¿Sabías que algunas de tus células defensivas pueden recordar infecciones pasadas, como si tuvieran memoria?",
+    "prompt_imagen": "close-up of a human natural killer cell with detailed surface receptors, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Las células NK (células asesinas naturales) forman parte del sistema inmune innato, la primera línea de defensa contra virus y tumores.",
+    "prompt_imagen": "illustration of NK cells patrolling blood vessels, realistic anatomy, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Durante mucho tiempo se pensó que sólo la inmunidad adaptativa tenía memoria, pero estudios recientes muestran que las NK pueden “recordar” patógenos.",
+    "prompt_imagen": "laboratory microscope view of NK cells interacting with a virus particle, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando una NK se expone a un virus, modifica la expresión de ciertos receptores, creando una respuesta más rápida y eficaz en futuros encuentros.",
+    "prompt_imagen": "diagram of NK cell receptor changes after viral exposure, realistic cellular detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este tipo de “memoria innata” ayuda a controlar infecciones recurrentes y también influye en la respuesta a ciertos tratamientos contra el cáncer.",
+    "prompt_imagen": "NK cell attacking a cancer cell, high detail, anatomically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así que la próxima vez que pienses en tus defensas, recuerda que tus células NK no solo atacan, ¡también aprenden! Síguenos para más datos sorprendentes.",
+    "prompt_imagen": "illustration of NK cells with subtle glowing effect suggesting memory, realistic style, no text, no words, no logos, no icons"
+  }
+]
