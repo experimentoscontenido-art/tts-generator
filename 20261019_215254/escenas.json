@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que en la cima del Everest el agua hierve a menos de 70 °C?",
+    "prompt_imagen": "snowy mountain summit with a small transparent kettle of boiling water, steam rising gently, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El punto de ebullición depende de la presión del aire, no solo de la temperatura.",
+    "prompt_imagen": "cross‑section illustration of the atmosphere showing decreasing pressure with altitude, arrows indicating lower pressure at high altitude, scientific visual style, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "A nivel del mar, la presión es 101.3 kPa y el agua hierve a 100 °C.",
+    "prompt_imagen": "sea‑level laboratory scene with a boiling beaker, a thermometer whose bulb is immersed in the water, the mercury column at the high end, realistic proportions, high detail, no visible numerals, no text, no logos, no icons"
+  },
+  {
+    "texto": "Cada 285 metros que subes, la presión baja aproximadamente 1 kPa, y el punto de ebullición baja 1 °C.",
+    "prompt_imagen": "vertical altitude bar showing evenly spaced markers, each marker paired with a subtle visual cue (e.g., color gradient) indicating a slight drop in temperature, scientific visual style, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En el Everest (≈8 846 m) la presión es ~34 kPa, por eso el agua hierve alrededor de 68 °C.",
+    "prompt_imagen": "mountain peak silhouette with a stylized thermometer silhouette whose mercury column is low, conveying a cooler boiling point, realistic proportions, high detail, no numerals, no text, no logos, no icons"
+  },
+  {
+    "texto": "Esto afecta a los escaladores: la comida tarda más en cocinarse y la deshidratación es más rápida.",
+    "prompt_imagen": "climber in high‑altitude gear cooking noodles over a small stove, steam appears faint, a droplet of water evaporating quickly nearby, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te gusta la ciencia, sigue a CienciaMente y descubre más curiosidades que cambian tu forma de ver el mundo.",
+    "prompt_imagen": "hand holding a smartphone showing a generic science app interface with icons of atoms and graphs, background of stars, realistic proportions, high detail, no logos, no text, no words, no icons"
+  }
+]
