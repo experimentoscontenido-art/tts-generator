@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que cada copo de nieve muestra una simetría hexagonal debido a la estructura molecular del agua?",
+    "prompt_imagen": "Close-up of a single snowflake with visible six-fold symmetry, high detail, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los cristales de nieve crecen siguiendo patrones hexagonales, no icosaedros, ya que la molécula de agua se organiza en una red tetraédrica que se proyecta en dos dimensiones.",
+    "prompt_imagen": "Illustration of a hexagonal snowflake with a simplified tetrahedral water molecule lattice in the background, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando el vapor de agua se congela, las moléculas forman enlaces de hidrógeno en una configuración tetraédrica, lo que genera la forma hexagonal característica del copo.",
+    "prompt_imagen": "Microscopic view of water molecules forming a tetrahedral hydrogen‑bond network, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cada rama del copo se replica mediante un proceso de crecimiento que mantiene la simetría hexagonal, no icosaédrica.",
+    "prompt_imagen": "Time‑lapse illustration of a snowflake growing, branches duplicating symmetrically with six-fold symmetry, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta precisión geométrica explica por qué los copos nunca son idénticos: pequeñas variaciones en temperatura y humedad alteran el crecimiento de cada rama.",
+    "prompt_imagen": "Two slightly different hexagonal snowflakes side by side, highlighting subtle differences, high detail, realistic, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los científicos estudian esta simetría para predecir la forma de cristales y diseñar materiales con propiedades únicas.",
+    "prompt_imagen": "Laboratory scene with a researcher examining hexagonal snow crystals under a microscope, realistic, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te fascinó este secreto de la nieve, suscríbete a CienciaMente y cuéntanos en los comentarios cuál es tu patrón natural favorito.",
+    "prompt_imagen": "Person holding a smartphone showing a short video of a snowflake, smiling, realistic, no text, no words, no logos, no icons"
+  }
+]
