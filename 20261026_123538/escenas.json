@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que la batería que impulsa los autos de hoy fue inventada en 1859?",
+    "prompt_imagen": "close-up of a vintage brass battery case with glowing electrodes, 19th century laboratory setting, realistic lighting, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En 1859, el físico francés Gaston Planté creó la primera batería recargable: la batería de plomo‑ácido.",
+    "prompt_imagen": "portrait of Gaston Planté in a 19th century laboratory, wearing a coat, realistic proportions, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Su principio es simple: dos placas de plomo sumergidas en una solución de ácido sulfúrico forman sulfato de plomo al descargarse.",
+    "prompt_imagen": "cross‑section diagram of a lead‑acid cell showing lead plates, sulfuric acid solution, and lead sulfate crystals, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Al invertir la corriente, el sulfato se vuelve a plomo y ácido, y la batería se recarga cientos de veces.",
+    "prompt_imagen": "animation‑style illustration of electrical arrows reversing direction in a lead‑acid cell, showing regeneration of lead plates, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta tecnología sigue vigente: la mayoría de los automóviles y sistemas de energía de respaldo usan baterías de plomo‑ácido.",
+    "prompt_imagen": "modern car battery mounted in a vehicle, close‑up view, realistic lighting, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Aunque hoy dominan las de ion‑litio, la batería de Planté demuestra que la ciencia de la energía recargable tiene raíces profundas.",
+    "prompt_imagen": "split‑screen image: left side vintage lead‑acid battery, right side sleek lithium‑ion battery, realistic comparison, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te gustó esta curiosidad, sigue a CienciaMente y cuéntanos en los comentarios qué otra invención antigua sigue presente en tu día a día.",
+    "prompt_imagen": "hand holding a smartphone showing the CienciaMente logo on screen, realistic proportions, high detail, no text, no words, no logos, no icons"
+  }
+]
