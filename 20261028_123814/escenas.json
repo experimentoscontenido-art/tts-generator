@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que hay una señal de radio que sigue funcionando incluso bajo tormentas y bajo el agua?",
+    "prompt_imagen": "a dramatic dark stormy sea with lightning, a faint radio wave pattern overlay, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Se trata de la frecuencia de muy baja frecuencia, VLF, que opera entre 3 y 30 kHz.",
+    "prompt_imagen": "a simple graphic of a frequency spectrum highlighting the 3‑30 kHz band, scientific illustration, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Estas ondas son tan largas que pueden rodear la Tierra y penetrar el agua hasta 20 metros de profundidad.",
+    "prompt_imagen": "a cross‑section view of Earth showing VLF waves encircling the globe and penetrating a blue ocean layer, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los submarinos usan VLF para recibir órdenes sin salir a la superficie.",
+    "prompt_imagen": "a realistic submarine underwater with a faint VLF wave line reaching it, high detail, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En la superficie, la Marina usa VLF para comunicarse con barcos a más de 500 km, incluso en tormentas.",
+    "prompt_imagen": "a naval ship on a rough sea, distant VLF signal arcs toward it, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta capacidad salva vidas: permite avisos de emergencia y coordinación en desastres naturales.",
+    "prompt_imagen": "a rescue operation scene with a radio tower emitting VLF waves, dramatic lighting, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió este poder oculto de la radio? Síguenos para descubrir más curiosidades como esta.",
+    "prompt_imagen": "a friendly host pointing to a glowing VLF wave icon, smiling, realistic portrait, high detail, no text, no words, no logos, no icons"
+  }
+]
