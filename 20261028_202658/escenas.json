@@ -1,0 +1,34 @@
+[
+  {
+    "texto": "¿Sabías que el antiadherente de tu sartén nació por accidente?",
+    "prompt_imagen": "close-up of a modern non-stick frying pan on a kitchen stove, shiny surface, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En 1938, el químico Roy Plunkett trabajaba en la empresa DuPont intentando crear un nuevo refrigerante.",
+    "prompt_imagen": "portrait of a 1930s laboratory with a scientist in a white coat examining glass containers, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Al abrir un cilindro de gas, descubrió que el contenido se había solidificado en un polvo blanco brillante.",
+    "prompt_imagen": "open gas cylinder releasing a fine white powder, laboratory background, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Ese polvo resultó ser politetrafluoroetileno, un polímero que no se adhiere a nada y resiste temperaturas extremas.",
+    "prompt_imagen": "microscopic view of PTFE polymer structure, hexagonal pattern, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "DuPont lo nombró \"Teflón\" y lo utilizó primero en aplicaciones industriales, como revestimientos de cables y componentes aeroespaciales.",
+    "prompt_imagen": "industrial setting showing PTFE coated wires and aerospace components, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En los años 60, el Teflón llegó a la cocina, creando las sartenes antiadherentes que hoy usamos todos.",
+    "prompt_imagen": "vintage 1960s kitchen with a non-stick pan on a stove, warm colors, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así, un simple error de laboratorio cambió la forma en que cocinamos y muchos procesos industriales. ¿Conoces otro invento accidental?",
+    "prompt_imagen": "thoughtful person looking at a non-stick pan, kitchen background, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Síguenos en CienciaMente para más descubrimientos inesperados y comparte este video con quien ama la ciencia.",
+    "prompt_imagen": "hand pressing the follow button on a smartphone screen showing the CienciaMente profile, realistic proportions, high detail, no text, no words, no logos, no icons"
+  }
+]
