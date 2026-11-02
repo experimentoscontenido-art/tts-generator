@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que la montaña más alta del planeta no está en la cima del Everest?",
+    "prompt_imagen": "aerial view of Mount Everest peak with clouds, dramatic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El récord de altura se mide desde la base hasta la cumbre. El Everest mide 8.848 m sobre el nivel del mar, pero su base está en la meseta tibetana.",
+    "prompt_imagen": "cross‑section illustration showing Everest rising from a plateau, realistic proportions, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Ahora mira Mauna Kea, en Hawái. Su cumbre está a 4.207 m sobre el nivel del mar, pero su base se encuentra en el fondo del océano.",
+    "prompt_imagen": "illustration of Mauna Kea emerging from the ocean, showing sea level and underwater base, realistic proportions, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Desde la base del lecho marino hasta su pico, Mauna Kea alcanza unos 10.210 m, superando al Everest en 1.362 m.",
+    "prompt_imagen": "vertical measurement line from ocean floor to Mauna Kea summit, showing a clear scale bar without numeric labels, realistic proportions, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esto muestra que la ‘altura’ depende del punto de referencia que elijamos: nivel del mar o base geológica.",
+    "prompt_imagen": "illustration of two measurement references: sea level and ocean floor, side by side, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Además, Mauna Kea es un volcán inactivo y su enorme masa influye en la tectónica de placas del Pacífico.",
+    "prompt_imagen": "schematic of tectonic plates under Hawaii, highlighting Mauna Kea, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió este dato? Descubre más curiosidades que cambian la forma de ver nuestro planeta.",
+    "prompt_imagen": "close‑up of a curious face looking at a mountain silhouette at sunset, no text, no words, no logos, no icons"
+  }
+]
