@@ -1,0 +1,34 @@
+[
+  {
+    "texto": "¿Sabías que dentro de tu sangre circulan asesinos que actúan sin haber sido entrenados?",
+    "prompt_imagen": "close-up of a blood vessel interior with glowing natural killer cells patrolling, anatomically accurate, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Son los linfocitos NK, una clase de glóbulos blancos que reconocen células anómalas al instante.",
+    "prompt_imagen": "microscopic view of natural killer cell attaching to an abnormal cell, high detail, realistic, anatomically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "A diferencia de los linfocitos T, no necesitan una “memoria” previa para atacar virus o tumores.",
+    "prompt_imagen": "comparison diagram showing NK cell vs T cell, simplified but realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Detectan la falta de moléculas de “autoprotección” (MHC I) en la superficie de la célula sospechosa.",
+    "prompt_imagen": "surface of a cell missing MHC I markers, highlighted with subtle glow, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Una vez identificada, liberan perforina y granzimas que perforan la célula objetivo y la destruyen.",
+    "prompt_imagen": "NK cell releasing perforin granules into a target cell, dramatic close-up, realistic anatomy, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este mecanismo es vital: hasta un 30 % de los tumores incipientes son eliminados antes de crecer.",
+    "prompt_imagen": "graphical illustration of tumor cells being eliminated by NK cells, realistic style, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así que, cada vez que tu cuerpo combate una infección, los NK están en la primera línea, sin entrenamiento previo.",
+    "prompt_imagen": "dynamic scene of NK cells rushing through bloodstream, energetic motion, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te sorprendió este dato, sigue a CienciaMente y comparte cuál es tu defensa innata favorita.",
+    "prompt_imagen": "hand pressing a 'follow' button on a mobile screen, abstract representation, no text, no words, no logos, no icons"
+  }
+]
