@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que el número cero, esencial para las matemáticas modernas, fue representado de forma independiente por la civilización maya alrededor del siglo IV d.C., al mismo tiempo que otras culturas, como la india, desarrollaban su propio concepto del cero?",
+    "prompt_imagen": "a close-up of an ancient Maya stone slab with a carved glyph resembling a shell symbol, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los mayas incorporaron este símbolo en su sistema numérico antes de que apareciera en la Europa medieval, aunque el cero también existía en la India desde el siglo V d.C.",
+    "prompt_imagen": "a timeline illustration showing a Maya glyph on the left, an Indian Brahmi zero on the center, and a European medieval manuscript on the right, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Lo llamaban ‘shell glyph’ y lo usaban para representar la ausencia de cantidad en sus complejos cálculos calendáricos.",
+    "prompt_imagen": "a Maya calendar stone with the shell glyph highlighted, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este cero permitió a los mayas crear tablas astronómicas precisas, como la predicción de eclipses y el seguimiento de ciclos planetarios.",
+    "prompt_imagen": "an ancient Maya astronomer observing the sky with a stylized star map, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Además, facilitó operaciones matemáticas avanzadas, como la división y el registro de grandes cantidades en su sistema vigesimal.",
+    "prompt_imagen": "a Maya scribe using a counting tool with beads, anatomically accurate hands, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Tras la caída de la civilización maya, el uso del cero desapareció en esa región, pero el concepto continuó desarrollándose en otras partes del mundo y volvió a difundirse en la Edad Media europea.",
+    "prompt_imagen": "a crumbling Maya temple overgrown with jungle, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te intrigó este dato, sigue a CienciaMente y comenta qué otro misterio maya te gustaría descubrir.",
+    "prompt_imagen": "a modern hand holding a smartphone showing the CienciaMente logo, realistic proportions, high detail, no text, no words, no logos, no icons"
+  }
+]
