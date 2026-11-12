@@ -1,0 +1,26 @@
+[
+  {
+    "texto": "¿Sabías que la primera transmisión de voz humana por radio se realizó en 1906?",
+    "prompt_imagen": "old wooden radio studio with early 1900s equipment, a man speaking into a microphone, sepia tone, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El inventor canadiense Reginald Fessenden intentó enviar señales de Morse, pero decidió probar algo más audaz: su propia voz.",
+    "prompt_imagen": "portrait of Reginald Fessenden in period clothing, standing beside a large antenna mast, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El 24 de diciembre, Fessenden transmitió un discurso navideño y una canción desde su laboratorio en Brant Rock, Massachusetts.",
+    "prompt_imagen": "snowy coastal New England scene at night, small wooden shack with antenna, warm light inside, realistic, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Cómo lo escucharon? Los barcos que navegaban a más de 500 km de distancia captaron la señal en sus receptores de radio.",
+    "prompt_imagen": "early 20th century sailing ship on ocean, deck with a vintage radio receiver, crew listening attentively, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este experimento demostró que la voz humana podía viajar por el aire sin cables, abriendo la puerta a la radio‑difusión y las telecomunicaciones modernas.",
+    "prompt_imagen": "illustration of sound waves emanating from a radio tower, flowing over a world map, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así nació la era de la radio, que hoy nos conecta en segundos alrededor del planeta. Síguenos para descubrir más hechos asombrosos como este.",
+    "prompt_imagen": "modern city skyline at night with glowing radio waves connecting buildings, realistic, high detail, no text, no words, no logos, no icons"
+  }
+]
