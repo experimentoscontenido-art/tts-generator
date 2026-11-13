@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que hay una forma de materia donde miles de átomos se comportan como si fueran un solo átomo?",
+    "prompt_imagen": "close-up of a single glowing blue atom floating in a dark vacuum, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Se llama condensado de Bose‑Einstein y se creó por primera vez en 1995 al enfriar átomos a casi cero absoluto.",
+    "prompt_imagen": "laboratory cryogenic chamber with laser beams cooling a cloud of rubidium atoms, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "A esas temperaturas, los átomos pierden su individualidad y forman una única onda cuántica que se extiende por todo el recipiente.",
+    "prompt_imagen": "visualization of a wavefunction spreading across a glass container, showing many atoms merging into one smooth wave, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En este estado, la materia muestra propiedades extrañas: fluye sin fricción y puede ser detenida o movida con luz láser.",
+    "prompt_imagen": "laser beam gently pushing a translucent blue cloud inside a transparent vessel, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Los condensados permiten experimentar con fenómenos cuánticos a escala macroscópica, como interferencias y superposición visibles a simple vista.",
+    "prompt_imagen": "interference pattern projected onto a screen from a Bose‑Einstein condensate, bright fringes, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esta investigación abrió la puerta a nuevas tecnologías: relojes atómicos ultra precisos, sensores de gravedad y simulaciones de materiales exóticos.",
+    "prompt_imagen": "modern quantum sensor device with glowing indicators on a sleek table, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¿Te sorprendió este estado de la materia? Síguenos en CienciaMente para descubrir más misterios cuánticos y comparte cuál te gustaría que exploremos después.",
+    "prompt_imagen": "animated hand pressing a 'follow' button on a floating social media icon, high detail, realistic proportions, no text, no words, no logos, no icons"
+  }
+]
