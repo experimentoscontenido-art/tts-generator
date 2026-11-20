@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que en la cara oculta de la Luna hay un cráter gigantesco, el South Pole‑Aitken, que es el mayor y más profundo del satélite?",
+    "prompt_imagen": "close-up of the Moon's far side surface showing a massive dark basin, high detail, realistic proportions, scientifically accurate, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Se llama South Pole‑Aitken y mide unos 2 500 km de diámetro y alrededor de 13 km de profundidad, lo que lo convierte en el mayor cráter de la Luna.",
+    "prompt_imagen": "schematic illustration of a gigantic lunar basin with scale markers, realistic lunar terrain, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este impacto tuvo lugar hace más de 4 mil millones de años, cuando un asteroide del tamaño de una pequeña luna colisionó con la superficie lunar.",
+    "prompt_imagen": "artistic rendering of a massive asteroid striking the lunar surface, creating a huge crater, realistic lighting, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "El cráter es tan profundo que expone partes del manto lunar, permitiendo a los científicos estudiar material que normalmente está enterrado bajo la corteza.",
+    "prompt_imagen": "cross‑section view of the lunar crust showing mantle layers exposed inside a deep basin, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En sus zonas permanentemente sombreadas se han detectado depósitos de hielo de agua, un recurso potencialmente valioso para futuras misiones.",
+    "prompt_imagen": "shadowed crater interior with icy patches glistening, realistic lunar surface, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Explorar South Pole‑Aitken es una de las prioridades de la NASA, la ESA y otras agencias para entender mejor la historia del Sistema Solar y preparar la exploración humana.",
+    "prompt_imagen": "modern lunar rover approaching a massive crater rim, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Si te sorprendió este dato, sigue a CienciaMente y cuéntanos qué otro misterio lunar te gustaría descubrir.",
+    "prompt_imagen": "person looking up at a night sky with the Moon prominently displayed, realistic, high detail, no text, no words, no logos, no icons"
+  }
+]
