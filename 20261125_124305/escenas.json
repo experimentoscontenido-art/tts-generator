@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que algunas semillas viajan en el vientre de una hormiga en vez de en el viento?",
+    "prompt_imagen": "close-up of a tiny seed with a fleshy orange elaiosome attached, lying on forest floor, high detail, scientifically accurate, realistic proportions, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Estas semillas poseen un elaiosoma, una capa nutritiva que huele a grasa y atrae a las hormigas.",
+    "prompt_imagen": "magnified view of an elaiosome on a seed, showing bright orange texture, realistic botanical illustration, anatomically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Las hormigas recogen la semilla, la llevan a su nido y consumen solo el elaiosoma, dejando la semilla intacta.",
+    "prompt_imagen": "ant carrying a seed in its mandibles, walking into an underground anthill entrance, realistic insect anatomy, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Dentro del nido, la semilla queda protegida de depredadores y de la competencia directa.",
+    "prompt_imagen": "cross‑section view of an ant nest chamber with a seed resting on soil, surrounded by tiny ant larvae, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Cuando la hormiga abandona el nido, la semilla se encuentra en un microhábitat rico en nutrientes, ideal para germinar.",
+    "prompt_imagen": "seed germinating in a dark, nutrient‑rich soil pocket inside an ant nest, tiny root sprouting, realistic botanical detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este proceso, llamado mirmecocoria, ayuda a crear bosques dispersos y a mantener la biodiversidad del suelo.",
+    "prompt_imagen": "small forest clearing dotted with young seedlings, each with a faint ant trail leading to them, realistic landscape, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "¡Así que la próxima vez que veas una hormiga, recuerda que quizá está transportando el futuro de un árbol! Síguenos para más curiosidades increíbles.",
+    "prompt_imagen": "single ant silhouette walking away on a leaf, sunrise background, artistic yet realistic, no text, no words, no logos, no icons"
+  }
+]
