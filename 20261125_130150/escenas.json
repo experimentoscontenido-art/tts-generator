@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "¿Sabías que un reloj a 10 km de altura marca el tiempo un poquito más rápido que uno al nivel del mar?",
+    "prompt_imagen": "close-up of a modern digital wristwatch on a wooden table, high detail, realistic lighting, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Esto no es ciencia ficción, es una predicción de la teoría de la relatividad de Einstein.",
+    "prompt_imagen": "portrait of Albert Einstein with chalkboard equations behind, scientifically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Según la relatividad general, cuanto más lejos estés del centro de la Tierra, menor será la gravedad y el tiempo transcurrirá más rápido.",
+    "prompt_imagen": "illustration of Earth with concentric gravity field lines decreasing outward, scientifically accurate, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "En 1971, los físicos Hafele y Keating llevaron relojes atómicos de cesio en aviones comerciales y los compararon con relojes idénticos en tierra.",
+    "prompt_imagen": "inside of a commercial airplane cabin showing a scientist holding a small atomic clock, anatomically accurate, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Después de varios vuelos, los relojes en el avión mostraron diferencias de decenas de nanosegundos (por ejemplo, un adelanto de ~59 ns en el vuelo este‑oeste), tal como predice la relatividad.",
+    "prompt_imagen": "close-up of two identical atomic clocks side by side, one with tiny digital readout showing a slight difference, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Este experimento demostró que los sistemas GPS deben corregir constantemente sus relojes satelitales por efectos relativistas, evitando errores de posición de varios metros.",
+    "prompt_imagen": "satellite view of Earth with GPS satellites orbiting, realistic proportions, high detail, no text, no words, no logos, no icons"
+  },
+  {
+    "texto": "Así que cada vez que uses tu móvil para ubicarte, agradece a Einstein y a esos relojes voladores. Síguenos para más curiosidades como esta.",
+    "prompt_imagen": "hand holding a smartphone showing a map app, realistic lighting, high detail, no text, no words, no logos, no icons"
+  }
+]
